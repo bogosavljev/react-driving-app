@@ -1,0 +1,301 @@
+/* Variables */
+
+$vin-blue: #5bc0de;
+$vin-green: #60b044;
+$vin-red: #d9534f;
+$vin-orange: #f0ad4e;
+
+$btn-bg-color-default: #f8fdff;
+
+@mixin noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+  }
+
+
+/* Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/**  Reset CSS  **/
+
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed,
+ figure, figcaption, footer, header, hgroup,
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure,
+ footer, header, hgroup, menu, nav, section {
+     display: block;
+ }
+
+ body {
+     line-height: 1.5em;
+     font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     font-weight: 400;
+     color: #4d4d4d;
+     margin: 0 auto;
+     -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+     padding: 0;
+     max-width: 760px;
+ }
+
+ ol, ul {
+     list-style: none;
+ }
+
+ blockquote, q {
+     quotes: none;
+ }
+
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+     content: '';
+     content: none;
+ }
+
+ input:focus,
+ select:focus,
+ textarea:focus,
+ button:focus {
+     outline: none;
+ }
+
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+}
+
+header {
+    padding-top: 90px;
+    height: 250px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 10px 0;
+
+    &.warning, &.error-info {
+        font-weight: 600;
+        color: $vin-red;
+    }
+}
+
+h2 {
+    color: $vin-blue;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.alt-header {
+    color: $vin-green;
+    padding-top: 30px;
+}
+
+.logo {
+    float: right;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+-webkit-appearance: none;
+-moz-appearance: none;
+}
+
+.container {
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+
+
+.btn {
+    @include noselect;
+    display: inline-block;
+    padding: 4px 4px;
+    text-decoration:none;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: $btn-bg-color-default;
+    transition: background-color .25s ease-in-out;
+
+    &.submit, &.detail {
+        background-color: $vin-blue;
+        color: #fff;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+
+        &:hover {
+            background-color: darken($vin-blue, 10%);
+        }
+    }
+
+    &.detail {
+        margin-left: 20px;
+    }
+
+    &.delete {
+        background-color: $vin-red;
+        color: #fff;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-left: 20px;
+
+        &:hover {
+            background-color: darken($vin-red, 10%);
+        }
+    }
+
+    &.back {
+        background-color: $vin-orange;
+        color: #fff;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken($vin-orange, 10%);
+        }
+    }
+}
+
+.recent-routes {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.recent-routes, main, .route-count {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.recent-routes li {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.recent-routes span {
+    width: 250px;
+    float: left;
+    line-height: 2.5em;
+}
+
+.add-routes {
+    padding: 20px 10px 10px 0;
+    display: block;
+}
+
+.google-maps {
+    max-width: 100%;
+    height: 400px;
+    margin: 20px 0;
+}
+
+.route-info {
+    padding: 20px 0;
+}
+
+input {
+    padding: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 250px;
+}
+
+main span {
+    line-height: 10em;
+}
+
+footer {
+    color: #bababa;
+    font-weight: 400;
+    text-align: center;
+
+    i {
+        padding: 0 3px;
+        color: #d9534f;
+        font-size: larger;
+    }
+
+    & p {
+        font-size: 14px;
+        position: relative;
+        top: 100px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        padding: 20px;
+
+    }
+
+    header, .container {
+        padding-top: 0;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .logo {
+        float: left;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer p {
+        padding: 20px;
+    }
+}
