@@ -4,7 +4,7 @@
 
 # React Driving App
 
-Driving route application made with **React** and build with **Webpack 3**
+Driving route application made with **React** and build with **Webpack 3** using Google Maps API
 
 ## Goal
 
