@@ -25,40 +25,28 @@ This page should display google map view with selected route on it and display d
 First you need to clone this repo on your local machine
 
 ```
-git clone 
+git clone https://github.com/bogosavljev/react-driving-app.git
 ```
 
-And repeat
+And install dependencies from ``` package.json ```
 
 ```
-until finished
+npm install 
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+### Start application in DEV mode
 
 ```
-Give an example
+npm run dev
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
+### Deployment and automated production build
 
 ```
-Give an example
+npm run prod
 ```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
