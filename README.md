@@ -46,7 +46,7 @@ npm run dev
 npm run prod
 ```
 
-## Built With
+### Built With
 
 * [React](https://facebook.github.io/react/) - The web framework used
 * [React Router 4](https://reacttraining.com/react-router/) - Dynamic Routing of your pages
