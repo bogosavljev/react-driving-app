@@ -1,4 +1,4 @@
-<a href="https://aimeos.org/">
+<a href="https://bogosavljev.com/">
     <img src="https://bogosavljev.com/wp-content/uploads/2017/09/driving-app-logo.png" alt="Driving App logo" title="Driving App" align="right" height="125" />
 </a>
 
@@ -34,9 +34,7 @@ And install dependencies from ``` package.json ```
 npm install 
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-### Start application in DEV mode
+### Start application
 
 ```
 npm run dev
@@ -50,23 +48,13 @@ npm run prod
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [React](https://facebook.github.io/react/) - The web framework used
+* [React Router 4](https://reacttraining.com/react-router/) - Dynamic Routing of your pages
+* [Webpack 3](https://webpack.js.org/) - Build your project
+* [Webpack Dev Server](https://webpack.js.org/configuration/dev-server/) - Server that provides live reloading
+* [Babel](https://babeljs.io/) - Transpile your new JavaScript ES6 to the browsers 
+* [Google Maps API](https://developers.google.com/maps/documentation/javascript/) - Add Google Maps API to show maps
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 <div align="center">
  <sub>The little React app is made with &#10084; and built with Webpack 3 | &copy; 2017. 
