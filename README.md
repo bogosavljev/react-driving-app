@@ -4,7 +4,7 @@
 
 # React Driving App
 
-Driving route application made with React and build with Webpack
+Driving route application made with **React** and build with **Webpack 3**
 
 ## Goal
 
