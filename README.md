@@ -28,6 +28,12 @@ First you need to clone this repo on your local machine
 git clone https://github.com/bogosavljev/react-driving-app.git
 ```
 
+Navigate to the folder ``` react-driving-app ```
+
+```
+cd react-driving-app
+```
+
 And install dependencies from ``` package.json ```
 
 ```
