@@ -1,7 +1,7 @@
 {
   "name": "react-driving-app",
   "version": "1.0.0",
-  "description": "React Driving App with React Router, Express and build with Webpack",
+  "description": "Driving App made in React and build with Webpack",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server",
@@ -10,6 +10,19 @@
   },
   "author": "Djurica Bogosavljev",
   "license": "ISC",
+  "keywords": [
+    "react",
+    "react-router 4",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack 3",
+    "driving",
+    "routes",
+    "google-map"
+  ],
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
@@ -40,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bogosavljev/driving-app"
+    "url": "https://github.com/bogosavljev/react-driving-app"
   },
   "dependencies": {
     "react-router-dom": "^4.2.2"
