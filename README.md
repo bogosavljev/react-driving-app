@@ -51,6 +51,7 @@ npm run dev
 ```
 npm run prod
 ```
+All code files will be created and minified under ```/dist``` folder.
 
 ### Built With
 
