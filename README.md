@@ -45,6 +45,7 @@ npm install
 ```
 npm run dev
 ```
+Application is running at ```http://localhost:9009/```
 
 ### Deployment and automated production build
 
