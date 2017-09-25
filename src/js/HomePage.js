@@ -13,26 +13,19 @@ class HomePage extends Component {
         this.state = {
             startValue: '',
             endValue: '',
-            getRoute: null,
-            getRouteIndex: null,
             routes: JSON.parse(localStorage.getItem('routes'))
         };
 
         this.addRoute = this.addRoute.bind(this);
         this.deleteRoute = this.deleteRoute.bind(this);
         this.onChange = this.onChange.bind(this);
-        this.getDetails = this.getDetails.bind(this);
     }
 
-    addRoute(event, start, end) {
+    addRoute(event) {
         event.preventDefault();
         let routesArray = [...this.state.routes, { start: this.state.startValue, end: this.state.endValue }];
         localStorage.setItem("routes", JSON.stringify(routesArray));
 
-        const route = {
-            start,
-            end
-          };
         this.state.routes.push(route);
         this.setState({
             startValue: '',
@@ -49,13 +42,6 @@ class HomePage extends Component {
         localStorage.setItem("routes", JSON.stringify(routesArray));
 
         this.setState({ routes: JSON.parse(localStorage.getItem('routes')) });
-    }
-
-    getDetails(index) {
-        this.setState({
-            getRoute: this.state.routes[index],
-            getRouteIndex: index
-        });
     }
 
     onChange(event) {
