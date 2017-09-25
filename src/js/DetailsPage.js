@@ -38,8 +38,7 @@ const DetailsPage = (props) => {
     route: PropTypes.shape({
       start: PropTypes.string.isRequired,
       end: PropTypes.string.isRequired
-    }),
-    index: PropTypes.number
+    })
   };
 
   export default DetailsPage;
