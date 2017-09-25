@@ -30,7 +30,7 @@ const Routes = (props) => {
 
 Routes.propTypes = {
   routes: PropTypes.array.isRequired,
-  deleteRoute: PropTypes.func.isRequired,
-  getDetails: PropTypes.func.isRequired
+  deleteRoute: PropTypes.func.isRequired
 };
+
 export default Routes;
