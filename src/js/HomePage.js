@@ -29,7 +29,7 @@ class HomePage extends Component {
         this.setState({
             startValue: '',
             endValue: '',
-            routes: JSON.parse(localStorage.getItem('routes'))
+            routes: routesArray
 
         });
     }
@@ -40,7 +40,7 @@ class HomePage extends Component {
         routesArray.splice(index, 1);
         localStorage.setItem("routes", JSON.stringify(routesArray));
 
-        this.setState({ routes: JSON.parse(localStorage.getItem('routes')) });
+        this.setState({ routes: routesArray });
     }
 
     onChange(event) {
