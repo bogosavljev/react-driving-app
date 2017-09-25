@@ -67,7 +67,6 @@ class HomePage extends Component {
                     <Routes
                         routes = { this.state.routes }
                         deleteRoute = { this.deleteRoute }
-                        getDetails = { this.getDetails }
                     />
                 <footer>
                     <p>Made with <i>&#10084;</i> in React and build with Webpack | &copy; 2017.  </p>
