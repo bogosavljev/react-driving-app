@@ -22,7 +22,6 @@ class HomePage extends Component {
     }
 
     addRoute(event) {
-        event.preventDefault();
         let routesArray = [...this.state.routes, { start: this.state.startValue, end: this.state.endValue }];
         localStorage.setItem("routes", JSON.stringify(routesArray));
 
