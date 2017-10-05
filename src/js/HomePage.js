@@ -21,7 +21,7 @@ class HomePage extends Component {
         this.onChange = this.onChange.bind(this);
     }
 
-    addRoute(event) {
+    addRoute() {
         let routesArray = [...this.state.routes, { start: this.state.startValue, end: this.state.endValue }];
         localStorage.setItem("routes", JSON.stringify(routesArray));
 
@@ -42,6 +42,7 @@ class HomePage extends Component {
     }
 
     onChange(event) {
+        event.preventDefault();
         let target = event.target;
         this.setState({ [target.name]: target.value });
     }
