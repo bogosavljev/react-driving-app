@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Routes from './Routes';
 
 class HomePage extends Component {
-    constructor(props, context) {
-        super(props, context);
+    constructor(props) {
+        super(props);
 
         if (!localStorage.getItem("routesSet")) {
             localStorage.setItem("routes", JSON.stringify([{ start: 'Novi Sad', end: 'Belgrade' }, { start: 'Belgrade', end: 'Nis' }]));
