@@ -35,7 +35,7 @@ class HomePage extends Component {
     deleteRoute(index) {
         let routesArray = [...this.state.routes];
 
-        routesArray.splice(index, 1);
+        routesArray = routesArray.filter((item, i) => i !=index );
         localStorage.setItem("routes", JSON.stringify(routesArray));
 
         this.setState({ routes: routesArray });
